@@ -19,3 +19,32 @@ docker ps -a
 이미지는 읽기 / 쓰기 액세스 권한이 있는 인스턴스를 실행하는 컨테이너의 블루프린트.(이미지가 인스턴스를 실행하지않음)
 
 여러 컨테이너가 동일 이미지 기반으로 할 수 있지만 서로 완전히 격리됨.
+
+---
+
+docker start 디폴트 detached mode (-a 명령어 가능)
+docker run 디폴트 attached mode (-d 명령어 가능)
+
+실행중인 컨테이너에는 docker attach CONTAINERID 가능
+
+- 인터랙티브 모드
+
+-it, -i, 재시작시 -a
+
+---
+
+- 컨테이너 삭제
+
+docker rm (stop 이후)
+
+docker rmi(docker images)
+
+docker image prune (사용하지않는 이미지 전부제거)
+
+docker run --rm (중지시 자동삭제)
+
+---
+
+docker image inspect ID
+
+---
