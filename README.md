@@ -48,3 +48,12 @@ docker run --rm (중지시 자동삭제)
 docker image inspect ID
 
 ---
+
+docker cp
+
+---
+
+docker run -o port:port -d --rm --name NAME ID
+
+- 이미지 name:tag(optional)
+  docker build -t NAME:tag .
