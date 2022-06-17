@@ -57,3 +57,9 @@ docker run -o port:port -d --rm --name NAME ID
 
 - 이미지 name:tag(optional)
   docker build -t NAME:tag .
+
+---
+
+- docker hub 에 이미지 푸시, 풀하기
+  - docker push / pull
+  - docker login / logout
