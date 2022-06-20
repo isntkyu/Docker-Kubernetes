@@ -63,3 +63,22 @@ docker run -o port:port -d --rm --name NAME ID
 - docker hub 에 이미지 푸시, 풀하기
   - docker push / pull
   - docker login / logout
+
+---
+
+- Data
+
+  - Application
+    - 코드와 환경.
+    - 읽기전용인 이미지에 저장됨
+  - Temparary App Data
+    - read/write 컨테이너에 저장됨
+    - 휘발성 데이터
+  - Permanent App Data
+    - read/write, 컨테이너와 볼륨에 저장됨.
+    - 데이터가 손실되면 안된다.(중지나 재시작시)
+
+- 볼륨
+  - 문제)컨테이너가 삭제되면 데이터 소실됨.
+  - 컨테이너나 이미지에 있는게 아닌 호스트 머신과 연동
+  - 컨테이너가 삭제되어도 사라지지않는 데이터
