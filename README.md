@@ -82,3 +82,14 @@ docker run -o port:port -d --rm --name NAME ID
   - 문제)컨테이너가 삭제되면 데이터 소실됨.
   - 컨테이너나 이미지에 있는게 아닌 호스트 머신과 연동
   - 컨테이너가 삭제되어도 사라지지않는 데이터
+
+---
+
+### 바인드 마운트
+
+- 볼륨과 비슷하지만 로컬 호스트머신의 경로을 알고있음
+- 영구적이고 편집가능한 데이터에 적합.
+- 컨테이너가 스냅샷이 아닌 항상 최신 코드에 액세스하도록 해줌.
+- 이미지에 영향 주지않고 컨테이너 실행시 입력 가능 (docker run)
+
+`https://headsigned.com/posts/mounting-docker-volumes-with-docker-toolbox-for-windows/`
